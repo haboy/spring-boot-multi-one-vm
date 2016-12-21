@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: provider
+  jmx:
+    enabled: false
+  cloud:
+    config:
+      uri: http://configserver:8888/
+
+eureka:
+  instance:
+    hostname: provider
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/

@@ -1,0 +1,24 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: configserver
+  jmx:
+    enabled: false
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        git:
+          uri: https://github.com/haboy/spring-boot-multi-one-vm/config-repo/ 
+      
+eureka:
+  instance:
+    hostname: configserver
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/

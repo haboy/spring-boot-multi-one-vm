@@ -1,0 +1,13 @@
+server:
+  port: 7779
+
+spring:
+  application:
+    name: consumer-ribbon
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
