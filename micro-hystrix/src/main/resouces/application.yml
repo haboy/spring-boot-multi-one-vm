@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: hytrix
+  jmx:
+    default_domain: hystrix
+    default-domain: hystrix
+    enabled: false
+
+endpoints:
+  jmx:
+    domain: hystrix
 
 eureka:
   client:
