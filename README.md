@@ -5,6 +5,3 @@
 启动方式
 
 ./run.sh
-
-仅供华为POC使用
-xiaodong.zhang2@huawei.com
